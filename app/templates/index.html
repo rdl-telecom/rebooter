@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+	<p class="header">Добро пожаловать, {{username}}!</p>
+	<form action="" method="post" name="main">
+{{form.hidden_tag()}}
+	<p>
+	{{form.devices.label}}<br>{{form.devices}}
+	</p>
+	<p>
+	{{form.configure.label}}{{form.configure}}
+	</p>
+	<p><input type="submit" value="Перезагрузить"></p>
+	{% with messages = get_flashed_messages(with_categories=true) %}
+	{% if messages %}
+	<ul>
+	{% for category, message in messages %}
+	<li class="{{category}}">{{message}}</li>
+	{% endfor %}
+	</ul>
+	{% endif %}
+	{% endwith %}
+{% endblock %}

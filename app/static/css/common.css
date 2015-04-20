@@ -1,0 +1,55 @@
+body {
+	background-image: url('/static/img/back.jpg');
+	background-repeat: repeat;
+	text-align: left;
+}
+
+div.main {
+	margin: 0 auto;
+	width: 60%;
+	font-size: 90%;
+	color: #cfcfcf;
+}
+
+h1, .header {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+.header {
+	font-size: 100%;
+}
+
+INPUT[type="checkbox"] {
+	position: relative;
+	right: 1;
+}
+
+label {
+	margin-right: 0.5em;
+	text-align: left;
+	width: 20%;
+}
+
+input {
+	color: black;
+}
+
+select[multiple] {
+	height: 400px;
+	width: 200px;
+	color: black;
+}
+
+.button {
+	width: 50%
+	text-align: center;
+}
+input[type="submit"] {
+	width: 16%;
+}
+
+.error {
+	font-size: 80%;
+	color: red;
+}
