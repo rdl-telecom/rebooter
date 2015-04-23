@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-	<p class="header">Добро пожаловать, {{username}}!</p>
+	<p class="header">Добро пожаловать, {{username}}! <a href="/logout">[выйти]</a></p>
 	<form action="" method="post" name="main">
 {{form.hidden_tag()}}
 	<p>
